@@ -1,0 +1,43 @@
+.header-logo {
+  background: $blue;
+  padding: 15px 0;
+  vertical-align: middle;
+
+  img {
+    display: block;
+    margin: 0 auto;
+
+    @media screen and (max-width: $screen-xs-max) {
+      width: 40px;
+    }
+  }
+}
+
+.header_floating {
+  animation: appear 500ms ease forwards;
+  animation-delay: 1000ms;
+  background: $blue;
+  padding: 15px 0;
+  position: fixed;
+  transform: translateY(-75px);
+  width: 100%;
+  z-index: 999;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+  }
+
+  &.is_scrolled {
+    @media screen and (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+
+  @keyframes appear {
+    to {
+      transform: translateY(0);
+    }
+  }
+}

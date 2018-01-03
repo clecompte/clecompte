@@ -1,0 +1,12 @@
+@mixin clearfix {
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+@mixin superclear {
+  &:after {
+    clear: both;
+    content: "";
+  }
+}
