@@ -10,6 +10,7 @@ web/app/uploads/*
 web/wp
 web/.htaccess
 wp-config.php
+uploads
 
 # Dotenv
 .env
@@ -17,6 +18,7 @@ wp-config.php
 !.env.example
 .DS_Store
 .editorconfig
+.ftpconfig
 
 # Composer
 vendor/*

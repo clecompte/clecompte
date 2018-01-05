@@ -6,6 +6,7 @@
     <a href="https://www.linkedin.com/in/clecompte/"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
     <a href="/feed/"><i class="fa fa-rss" aria-hidden="true"></i>RSS</a>
     <a href="https://twitter.com/clecompte"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+    <a href="https://github.com/clecompte"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
   </span>
 </footer>
 
