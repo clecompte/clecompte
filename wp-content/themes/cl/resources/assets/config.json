@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/clecompte",
+  "publicPath": "/wp-content/themes/cl",
   "devUrl": "http://clecompte.dev",
   "proxyUrl": "http://localhost:4000",
   "cacheBusting": "[name]_[hash:8]",

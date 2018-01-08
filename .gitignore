@@ -11,6 +11,7 @@ web/wp
 web/.htaccess
 wp-config.php
 uploads
+plugins
 
 # Dotenv
 .env

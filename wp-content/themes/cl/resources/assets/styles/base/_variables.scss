@@ -6,6 +6,10 @@ $gray-medium: #ccc;
 $gray-dark: #4C5454;
 
 
+// Fonts
+$fontSerif: 'PT Serif', Georgia, Times,serif;
+$fontSansSerif: 'Roboto', Helvetica, Arial, sans-serif;
+
 // Breakpoints
 $screen-xs:                  480px !default;
 $screen-xs-min:              $screen-xs !default;

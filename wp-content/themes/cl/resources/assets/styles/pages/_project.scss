@@ -1,28 +1,57 @@
+.post_full.m_project {
+  max-width: 100%;
+  padding: 0;
+
+  header {
+    padding: 50px 0;
+  }
+
+  .post_full-type {
+    background: $gray-light;
+    color: $gray-dark;
+    font-family: $fontSansSerif;
+    font-size: 1.7em;
+    font-weight: 100;
+    padding: 50px 0 35px 0;
+    text-align: center;
+
+    span {
+      color: lighten($gray-dark, 15%);
+      display: block;
+      font-family: $fontSerif;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+  }
+
+  .post_full-title {
+    font-family: $fontSansSerif;
+    font-size: 3.4em;
+    margin: 15px 0 0 0;
+  }
+
+  .post_full-image {
+    img {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  }
+
+  .post_full-content-container {
+    color: #fff;
+    margin: 50px auto;
+    max-width: 1200px;
+  }
+}
+
 .single-project {
   img {
     height: auto;
     max-width: 100%;
-  }
-}
-
-.projects-content-list {
-  flex-wrap: wrap;
-
-  .post {
-    margin-right: 0;
-    margin-bottom: 40px;
-
-    @media screen and (min-width: $screen-sm-min) {
-      width: 31%;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-
-      &:not(:nth-child(3n)) {
-        margin-right: 3%;
-      }
-    }
   }
 }
 
