@@ -26,14 +26,10 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     new BrowserSyncPlugin({
       target,
+      open: config.open,
       proxyUrl: config.proxyUrl,
       watch: config.watch,
       delay: 500,
-      advanced: {
-        browserSync: {
-          browser: "google chrome canary"
-        }
-      }
     }),
   ],
 };
