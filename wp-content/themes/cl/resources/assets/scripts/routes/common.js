@@ -6,7 +6,7 @@ export default {
     var headerFloating = $(".header_floating");
 
     $(window).on("load resize scroll", function() {
-      var contentOffset = $(".writings").offset().top;
+      var contentOffset = $(".writings")[0] === undefined ? "500" : $(".writings").offset().top;
       var top = $(this).scrollTop();
 
       if ((top > (contentOffset)) && ($(window).width() >= 768)) {

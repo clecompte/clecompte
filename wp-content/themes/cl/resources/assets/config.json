@@ -6,7 +6,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/cl",
-  "devUrl": "http://clecompte.dev",
+  "devUrl": "http://clecompte.test",
   "proxyUrl": "http://localhost:4000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

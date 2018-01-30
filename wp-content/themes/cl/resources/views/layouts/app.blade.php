@@ -14,6 +14,8 @@
     @include('partials.footer')
     @php(wp_footer())
 
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a0b530cafed1487"></script>
+    <?php if ('post' == get_post_type()) : ?>
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a0b530cafed1487"></script>
+    <?php endif; ?>
   </body>
 </html>

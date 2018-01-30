@@ -1,75 +1,280 @@
-.post_full.m_project {
-  max-width: 100%;
-  padding: 0;
+.project_post {
+  font-family: 'PT Serif', sans-serif;
+  margin: 0 auto;
+}
 
-  header {
-    padding: 50px 0;
+.project_post-header {
+  margin: 10px 0 0 0;
+}
+
+.project_post-header-type {
+  background: $gray-light;
+  color: lighten($gray-dark,10%);
+  font-family: $fontSansSerif;
+  font-size: 1.6em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding: 50px 0 50px 25px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $screen-sm-max) {
+    font-size: 1.3em;
+    padding-bottom: 20px;
   }
 
-  .post_full-type {
-    background: $gray-light;
-    color: $gray-dark;
-    font-family: $fontSansSerif;
-    font-size: 1.7em;
-    font-weight: 100;
-    padding: 50px 0 35px 0;
-    text-align: center;
+  @media screen and (max-width: $screen-xs-max) {
+    font-size: 1.1em;
+    padding-bottom: 0;
+  }
 
-    span {
-      color: lighten($gray-dark, 15%);
-      display: block;
-      font-family: $fontSerif;
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 5px;
-      text-transform: uppercase;
+  span {
+    color: darken($gray-light,30%);
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 15px;
     }
-  }
 
-  .post_full-title {
-    font-family: $fontSansSerif;
-    font-size: 3.4em;
-    margin: 15px 0 0 0;
-  }
-
-  .post_full-image {
-    img {
-      display: block;
-      height: auto;
-      margin: 0 auto;
-      max-width: 1200px;
+    @media screen and (max-width: $screen-xs-max) {
+      font-size: 13px;
     }
-  }
-
-  .post_full-content-container {
-    color: #fff;
-    margin: 50px auto;
-    max-width: 1200px;
   }
 }
 
-.single-project {
+.c_project_header {
+  padding: 165px 0;
+
+  @media screen and (max-width: $screen-md-max) {
+    padding: 100px 0 40px 0;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 50px 0 25px 0;
+  }
+}
+
+.project_post-header-title {
+  font-family: $fontSansSerif;
+  font-size: 4em;
+  font-weight: 900;
+  padding: 0 0 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $screen-md-max) {
+    font-size: 3em;
+    padding: 0;
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    line-height: .7em;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    font-size: 2em;
+  }
+}
+
+.project_post-header-description {
+  color: $gray-dark;
+  display: block;
+  margin: 50px auto 0 auto;
+  max-width: 800px;
+  text-align: center;
+
+  p {
+    font-family: $fontSerif;
+    font-size: 1.6em;
+    line-height: 1.8em;
+    margin: 0;
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    font-size: 1.3em;
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    font-size: 1.1em;
+    margin: 25px auto;
+  }
+}
+
+.project_post-image {
+  background: $gray-light;
+  padding-top: 50px;
+
   img {
+    box-shadow: 0 0 20px rgba(0,0,0,.35);
+    display: block;
     height: auto;
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @media screen and (max-width: $screen-lg) {
+      height: auto;
+      width: 90%;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+      margin-top: 0;
+    }
+  }
+}
+
+.project_post-content-container {
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 100px 0;
+
+  p {
+    font-family: $fontSansSerif;
+    font-weight: 100;
+    margin: 40px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: $screen-lg) {
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    padding: 75px 50px;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 50px 25px;
+  }
+}
+
+.project_post-content {
+  &.m_opening {
+    p {
+      font-size: 1.4em;
+      line-height: 1.5em;
+      text-align: left;
+
+      @media screen and (max-width: $screen-sm-max) {
+        font-size: 1.2em;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  &.m_results {
+    background: $gray-light;
+
+    p {
+      color: lighten($gray-dark,10%);
+      font-family: $fontSerif;
+      font-style: italic;
+      font-size: 1.6em;
+      font-weight: 300;
+      line-height: 1.5em;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      @media screen and (max-width: $screen-sm-max) {
+        font-size: 1.3em;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        font-size: 1.2em;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.project_post-content-title {
+  color: $gray-dark;
+  font-family: $fontSansSerif;
+  font-size: 2.6em;
+  font-weight: 900;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $screen-sm-max) {
+    border-top-width: 25px;
+    font-size: 2em;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    display: block;
+    font-size: 1.6em;
+    text-align: center;
+  }
+}
+
+.post_project-more {
+  background: $gray-dark;
+  color: #fff;
+  display: block;
+  font-family: $fontSansSerif;
+  font-size: 2em;
+  font-weight: 100;
+  margin-top: 8px;
+  padding: 50px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all linear 300ms;
+
+  @media screen and (max-width: $screen-xs-max) {
+    font-size: 1.4em;
+    padding: 30px 0;
+  }
+
+  &:hover {
+    background: #fff;
+    color: $blue;
+
+    .fa {
+      color: #000;
+    }
   }
 }
 
 .single-project {
   blockquote {
     background: $gray-light;
+    color: $gray-dark;
     font-size: 1.1em;
     font-style: italic;
-    padding: 40px;
     margin: 50px 0;
-    color: $gray-dark;
+    padding: 40px;
 
     &:before {
       content: '\201C';
       font-size: 7em;
       float: left;
-      margin: -10px 15px 10px 0;
       height: 1px;
+      margin: -10px 15px 10px 0;
     }
 
     @media screen and (max-width: $screen-xs-max) {
@@ -79,21 +284,6 @@
 
     .cite {
       font-style: normal;
-    }
-  }
-
-  .project-link {
-    border-bottom: 2px solid $gray-light;
-    border-top: 2px solid $gray-light;
-    font-size: 1.3em;
-    font-weight: 600;
-    margin: 75px 0;
-    padding: 30px 0;
-    text-align: center;
-
-    @media screen and (max-width: $screen-xs-max) {
-      font-size: 1.2em;
-      padding: 20px 0;
     }
   }
 }
