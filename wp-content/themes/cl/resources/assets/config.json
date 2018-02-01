@@ -3,6 +3,9 @@
     "main": [
       "./scripts/main.js",
       "./styles/main.scss"
+    ],
+    "modernizr": [
+      "./scripts/modernizr.js"
     ]
   },
   "publicPath": "/wp-content/themes/cl",

@@ -123,6 +123,14 @@
   background: #fff;
   padding-top: 100px;
 
+  @media screen and (max-width: $screen-sm-max) {
+    padding-top: 75px;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding-top: 40px;
+  }
+
   img {
     box-shadow: 0 0 20px rgba(0,0,0,.35);
     display: block;
@@ -152,6 +160,10 @@
     font-weight: 100;
     margin: 40px 0;
 
+    @media screen and (max-width: $screen-xs-max) {
+      margin: 30px 0;
+    }
+
     &:first-child {
       margin-top: 0;
     }
@@ -176,6 +188,10 @@
 
 .project_post-content {
   &.m_opening {
+    a {
+      color: #fff;
+    }
+
     p {
       font-size: 1.4em;
       font-weight: 300;

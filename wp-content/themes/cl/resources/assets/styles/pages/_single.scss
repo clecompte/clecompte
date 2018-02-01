@@ -13,6 +13,7 @@
   font-size: 2.6em;
   font-weight: 600;
   margin-bottom: 30px;
+  padding: 0 75px;
   text-align: center;
 
   a, a:link, a:hover, a:visited, a:active {
@@ -22,6 +23,7 @@
 
   @media screen and (max-width: $screen-sm-max) {
     font-size: 1.8em;
+    padding: 0;
   }
 }
 
