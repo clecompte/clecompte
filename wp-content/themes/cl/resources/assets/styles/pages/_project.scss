@@ -4,6 +4,7 @@
 }
 
 .project_post-header {
+  background: url(../images/project-hero-bg.jpg) no-repeat center center / cover;
   margin: 10px 0 0 0;
 }
 
@@ -14,18 +15,17 @@
   font-size: 1.6em;
   font-weight: 100;
   letter-spacing: 1px;
-  padding: 50px 0 50px 25px;
+  padding: 50px 0;
   text-align: center;
   text-transform: uppercase;
 
   @media screen and (max-width: $screen-sm-max) {
     font-size: 1.3em;
-    padding-bottom: 20px;
+    padding: 30px 0;
   }
 
   @media screen and (max-width: $screen-xs-max) {
     font-size: 1.1em;
-    padding-bottom: 0;
   }
 
   span {
@@ -48,13 +48,18 @@
 }
 
 .c_project_header {
-  padding: 165px 0;
+  display: flex;
+  flex-direction: column;
+  height: 55vh;
+  justify-content: center;
+  min-height: 400px;
 
   @media screen and (max-width: $screen-md-max) {
     padding: 100px 0 40px 0;
   }
 
   @media screen and (max-width: $screen-sm-max) {
+    height: auto;
     padding: 50px 0 25px 0;
   }
 }
@@ -95,20 +100,28 @@
     margin: 0;
   }
 
+  a {
+    font-family: $fontSansSerif;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: .9em;
+    display: inline-block;
+  }
+
   @media screen and (max-width: $screen-md-max) {
-    font-size: 1.3em;
-    max-width: 90%;
+    font-size: .9em;
   }
 
   @media screen and (max-width: $screen-sm-max) {
-    font-size: 1.1em;
+    font-size: .8em;
     margin: 25px auto;
+    max-width: 90%;
   }
 }
 
 .project_post-image {
-  background: $gray-light;
-  padding-top: 50px;
+  background: #fff;
+  padding-top: 100px;
 
   img {
     box-shadow: 0 0 20px rgba(0,0,0,.35);
@@ -165,6 +178,7 @@
   &.m_opening {
     p {
       font-size: 1.4em;
+      font-weight: 300;
       line-height: 1.5em;
       text-align: left;
 
@@ -174,6 +188,20 @@
 
       @media screen and (max-width: $screen-xs-max) {
         font-size: 1.1em;
+      }
+    }
+
+    ul {
+      margin-left: 35px;
+    }
+
+    ul, li {
+      font-family: $fontSansSerif;
+      font-size: 1.1em;
+      font-weight: 300;
+
+      @media screen and (max-width: $screen-sm-max) {
+        font-size: 1em;
       }
     }
   }

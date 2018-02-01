@@ -17,11 +17,11 @@
         <?php echo $opening; ?>
       </span>
     </div>
-    <h2 class="project_post-header-type">
-      <span>Project Overview</span>
-      <?php echo $type; ?>
-    </h2>
   </header>
+  <h2 class="project_post-header-type">
+    <span>Project Overview</span>
+    <?php echo $type; ?>
+  </h2>
   <div class="project_post-image">
     <img src="<?php echo $projectMainImage['url']; ?>" alt="<?php echo $projectMainImage['alt']; ?>" />
   </div>
