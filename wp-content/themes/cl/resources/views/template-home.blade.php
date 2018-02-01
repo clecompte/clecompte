@@ -11,7 +11,7 @@
 
   <section class="hero">
     <div class="logo">
-      <img width="100" alt="Chris LeCompte" src="{{ get_template_directory_uri() . '/assets/images/logo.svg' }}" />
+      <img width="100" height="97" alt="Chris LeCompte" src="{{ get_template_directory_uri() . '/assets/images/logo.svg' }}" />
     </div>
 
     <div class="hero-content">
@@ -71,9 +71,7 @@
         @endwhile
 
       </div>
-      <div class="c_content">
-        <a href="/projects/" class="projects-content-more">More Projects <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-      </div>
+      <a href="/projects/" class="projects-content-more">More Projects <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     </div>
   </section>
 

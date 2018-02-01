@@ -290,6 +290,18 @@
   }
 }
 
+.no-flexboxlegacy .writings-content-posts {
+
+  .post {
+  }
+
+  .post-title,
+  .post-body {
+    display: block;
+    flex: none;
+  }
+}
+
 .writings-content-more {
   border-top: 1px solid #fff;
   color: $yellow;
@@ -527,15 +539,21 @@
 }
 
 .projects-content-list {
-  display: block;
-  margin: 0;
+  display: grid;
+  grid-gap: 30px;
+  justify-content: center;
+  margin: 100px 0;
 
-  @media screen and (min-width: $screen-sm-min) {
-    display: grid;
+  @media screen and (min-width: $screen-md-min) {
     grid-template-columns: repeat(3, 30%);
-    grid-gap: 30px;
-    justify-content: center;
-    margin: 100px 0;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    grid-template-columns: repeat(2, 47%);
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    display: block;
   }
 
   > a {
@@ -628,6 +646,38 @@
   }
 }
 
+.no-cssgrid .projects-content-list {
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+
+  > a {
+    display: inline-block;
+    margin: 0 3% 50px 0;
+    width: 30%;
+
+    @media screen and (min-width: $screen-md-min) {
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      width: 47%;
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+  }
+}
+
 .projects-content-more {
   @extend .writings-content-more;
+  margin: 0 3%;
+  width: 94%;
 }

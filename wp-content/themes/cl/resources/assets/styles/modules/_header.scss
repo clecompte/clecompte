@@ -17,6 +17,7 @@
   animation: appear 500ms ease forwards;
   animation-delay: 1000ms;
   background: $blue;
+  display: none;
   padding: 15px 0;
   position: fixed;
   transform: translateY(-75px);
@@ -30,6 +31,8 @@
   }
 
   &.is_scrolled {
+    display: block;
+
     @media screen and (max-width: $screen-xs-max) {
       display: none;
     }
