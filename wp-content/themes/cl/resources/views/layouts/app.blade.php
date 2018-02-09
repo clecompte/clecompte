@@ -11,7 +11,7 @@
         </main>
     </div>
     @php(do_action('get_footer'))
-    @include('partials.footer')
+      @include('partials.footer')
     @php(wp_footer())
 
     <?php if ('post' == get_post_type()) : ?>
