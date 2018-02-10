@@ -5,8 +5,16 @@
 @extends('layouts.app')
 @section('content')
 
-  <div class="header_floating">
-    <img width="40" alt="Chris LeCompte" src="{{ get_template_directory_uri() . '/assets/images/logo.svg' }}" />
+  <div class="header_floating m_full_header">
+    <div class="header-content">
+      <div class="header-content-logo">
+        <img width="40" alt="Chris LeCompte" src="{{ get_template_directory_uri() . '/assets/images/logo.svg' }}" />
+      </div>
+      <nav class="header-content-nav">
+        <a href="/blog/">Blog</a>
+        <a href="/projects/">Projects</a>
+      </nav>
+    </div>
   </div>
 
   <section class="hero">
