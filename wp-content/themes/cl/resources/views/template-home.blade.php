@@ -23,7 +23,7 @@
     </div>
 
     <div class="hero-content">
-      <h1 class="hero-content-title"><em>Chris LeCompte</em> Front-end development, design &amp; web project management</h1>
+      <h1 class="hero-content-title"><em>Chris LeCompte</em> I design, develop &amp; create products for the web.</h1>
       <span class="hero-content-attribute"></span>
     </div>
   </section>
@@ -43,6 +43,7 @@
           @endif
           <article class="post">
             <h3 class="post-title"><span><a href="{{ get_permalink() }}">{{ the_title() }}</a></span></h3>
+            @php(the_post_thumbnail('home'))
             <div class="post-body">
               <span class="post-body-date">{{ the_date() }}</span>
               <div class="post-body-summary">{{ the_content() }}</div>
@@ -100,15 +101,15 @@
       <div class="experience-content_left">
         <ul class="experience-content_left-list">
           <h3 class="experience-content_left-title"><strong>ID.me</strong> <span>2014&ndash;Present</span></h3>
-          <p>Front-end web development, design &amp; other cool stuff in the digital identity arena.</p>
+          <p>Front-end development, design &amp; product creation in the digital identity arena.</p>
           <h3 class="experience-content_left-title"><strong>Freelancer</strong> <span>Forever&ndash;Present</span></h3>
           <p>Web development, design &amp; strategy for tons of awesome clients.</p>
           <h3 class="experience-content_left-title"><strong>CXO Advisory</strong> <span>2007&ndash;Present</span></h3>
-          <p>Complete web and technology management for an investing site I co-run with my father.</p>
+          <p>Complete web and product management for an investing site I run with my father.</p>
           <h3 class="experience-content_left-title"><strong>ACS Creative</strong> <span>2013&ndash;2014</span></h3>
           <p>The front-end development guy for a small creative agency in Fairfax, Virginia.</p>
           <h3 class="experience-content_left-title"><strong>CAVENDO</strong> <span>2006&ndash;2013</span></h3>
-          <p>Web development, design &amp; web project management &ndash; taking care of all the clients at the small web agency I ran with a friend.</p>
+          <p>Web development, design &amp; project management&mdash;taking care of all the clients at the small web agency I ran with a friend.</p>
         </ul>
       </div>
       <div class="experience-content_right">

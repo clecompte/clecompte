@@ -5,3 +5,4 @@ function modify_read_more_link() {
 }
 add_filter( 'the_content_more_link',  __NAMESPACE__ . '\\modify_read_more_link' );
 add_image_size( 'post', 1200, 9999 );
+add_image_size( 'home', 800, 9999 );

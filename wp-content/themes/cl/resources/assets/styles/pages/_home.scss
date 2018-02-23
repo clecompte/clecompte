@@ -89,7 +89,7 @@
   }
 
   @media screen and (max-width: $screen-xs-max) {
-    font-size: 1.8em;
+    font-size: 1.6em;
     padding-left: 0;
     text-align: center;
   }
@@ -171,6 +171,11 @@
 
   .post {
     margin-bottom: 30px;
+
+    .size-home {
+      height: auto;
+      max-width: 100%;
+    }
 
     @media screen and (min-width: $screen-sm-min) {
       display: flex;
@@ -424,7 +429,6 @@
     @media screen and (max-width: $screen-sm-max) {
       font-size: 16px;
       margin: 10px 0;
-      text-align: center;
     }
   }
 }
