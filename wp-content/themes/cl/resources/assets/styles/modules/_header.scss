@@ -17,6 +17,7 @@
   animation: appear 500ms ease forwards;
   animation-delay: 1000ms;
   background: $blue;
+  box-shadow: 0 2px 7px rgba(0,0,0,.3);
   display: none;
   padding: 15px 0;
   position: fixed;

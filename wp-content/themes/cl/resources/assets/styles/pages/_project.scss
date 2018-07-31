@@ -101,6 +101,10 @@
     font-size: 1.6em;
     line-height: 1.8em;
     margin: 0;
+
+    @media screen and (max-width: $screen-sm-max) {
+      font-size: 1.4em;
+    }
   }
 
   a {
@@ -399,5 +403,27 @@
 
   .projects-content-list {
     margin-bottom: 0;
+  }
+}
+
+// CUSTOMIZATIONS TO SPECIFIC PROJECTS
+.postid-2309 {
+  .project_gallery-item {
+    vertical-align: top;
+    
+    img {
+      border: 1px solid $gray-light;
+    }
+  }
+}
+
+.postid-2320,
+.postid-2315 {
+  .project_gallery-item {
+    img {
+      border: 1px solid $gray-light;
+      max-width: 500px;
+      width: 100%;
+    }
   }
 }

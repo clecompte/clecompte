@@ -23,7 +23,7 @@
     </div>
 
     <div class="hero-content">
-      <h1 class="hero-content-title"><em>Chris LeCompte</em> I design, develop &amp; create products for the web.</h1>
+      <h1 class="hero-content-title"><em>Chris LeCompte</em> I design, develop &amp; create for the web</h1>
       <span class="hero-content-attribute"></span>
     </div>
   </section>
@@ -33,7 +33,7 @@
       <div class="writings-content">
         <h2 class="writings-content-title">Stuff I <span>write</span> about</h2>
         <?php
-          $args = array('posts_per_page' => 10);
+          $args = array('posts_per_page' => 4);
           $posts = new WP_Query($args);
           $i = 0;
         ?>
