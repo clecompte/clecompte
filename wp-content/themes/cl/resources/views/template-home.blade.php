@@ -100,7 +100,9 @@
     <div class="c_content">
       <div class="experience-content_left">
         <ul class="experience-content_left-list">
-          <h3 class="experience-content_left-title"><strong>ID.me</strong> <span>2014&ndash;Present</span></h3>
+          <h3 class="experience-content_left-title"><strong>Northern Virginia Community College</strong> <span>2018&ndash;Present</span></h3>
+          <p>Web leadership and project management.</p>
+          <h3 class="experience-content_left-title"><strong>ID.me</strong> <span>2014&ndash;2018</span></h3>
           <p>Front-end development, design &amp; product creation in the digital identity arena.</p>
           <h3 class="experience-content_left-title"><strong>Freelancer</strong> <span>Forever&ndash;Present</span></h3>
           <p>Web development, design &amp; strategy for tons of awesome clients.</p>

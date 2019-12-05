@@ -475,13 +475,17 @@
     display: table-cell;
     line-height: 22px;
     vertical-align: middle;
-    width: 50%;
+  }
+
+  strong {
+    width: 65%;
   }
 
   span {
     font-size: .8em;
     font-weight: 400;
     text-align: right;
+    width: 35%;
   }
 
   @media screen and (max-width: $screen-sm-max) {

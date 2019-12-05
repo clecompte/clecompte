@@ -12,7 +12,7 @@
       <div class="projects-content-list">
 
         <?php
-          $args = array('posts_per_page' => 99, 'post_type' => 'project');
+          $args = array('posts_per_page' => 99, 'post_type' => 'project', 'orderby' => 'date', 'order' => 'DESC');
           $projects = new WP_Query($args);
         ?>
         @while($projects->have_posts()) @php($projects->the_post())
