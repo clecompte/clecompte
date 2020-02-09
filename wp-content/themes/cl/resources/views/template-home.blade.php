@@ -9,6 +9,7 @@
     <div class="header-content">
       <div class="header-content-logo">
         <img width="40" alt="Chris LeCompte" src="{{ get_template_directory_uri() . '/assets/images/logo.svg' }}" />
+        <span>Chris LeCompte</span>
       </div>
       <nav class="header-content-nav">
         <a href="/blog/">Blog</a>
@@ -20,10 +21,16 @@
   <section class="hero">
     <div class="logo">
       <img width="100" height="97" alt="Chris LeCompte" src="{{ get_template_directory_uri() . '/assets/images/logo.svg' }}" />
+      <h1 class="logo-name">Chris LeCompte</h1>
     </div>
 
     <div class="hero-content">
-      <h1 class="hero-content-title"><em>Chris LeCompte</em> I design, develop &amp; create for the web</h1>
+      <div class="hero-content-title">
+        <span>Discover</span>
+        <span>Design</span>
+        <span>Build</span>
+        <span>Manage</span>
+      </div>
       <span class="hero-content-attribute"></span>
     </div>
   </section>

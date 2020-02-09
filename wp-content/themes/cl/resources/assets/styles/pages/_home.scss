@@ -24,6 +24,26 @@
   }
 }
 
+.logo-name {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 100;
+  margin-top: 20px;
+  text-align: center;
+
+  @media screen and (max-width: $screen-lg) {
+    font-size: 1.6em;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    font-size: 1.4em;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    font-size: 1.3em;
+  }
+}
+
 .hero {
   width: 100%;
 
@@ -42,8 +62,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 25vh 0;
-  vertical-align: middle;
+  padding: 2vh 0 20vh 0;
+  vertical-align: top;
 
   &.m_hero1 {
     background-image: url(../images/hero1.jpg);
@@ -73,19 +93,28 @@
 }
 
 .hero-content-title {
-  text-align: left;
-  color: $gray-dark;
-  font-size: 3.2em;
-  font-weight: 100;
+  text-align: right;
+  color: darken($gray-dark,20%);
+  font-size: 8em;
+  font-weight: 800;
   padding: 0 50px 0 100px;
 
+  @media screen and (max-width: 1400px) {
+    font-size: 6em;
+  }
+
+  @media screen and (max-height: 800px) {
+    font-size: 5em;
+  }
+
   @media screen and (max-width: $screen-lg) {
+    font-size: 5em;
     padding-left: 50px;
   }
 
   @media screen and (max-width: $screen-sm-max) {
     padding-right: 0;
-    font-size: 2em;
+    font-size: 3em;
   }
 
   @media screen and (max-width: $screen-xs-max) {
@@ -94,13 +123,21 @@
     text-align: center;
   }
 
-  > em {
-    color: darken($gray-dark,20%);
+  > span {
     display: block;
-    font-style: none;
-    font-weight: 800;
-    font-size: .9em;
-    margin-bottom: 10px;
+
+    @media screen and (max-width: $screen-xs-max) {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: block;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 }
 
