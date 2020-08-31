@@ -52,7 +52,6 @@
             <h3 class="post-title"><span><a href="{{ get_permalink() }}">{{ the_title() }}</a></span></h3>
             @php(the_post_thumbnail('home'))
             <div class="post-body">
-              <span class="post-body-date">{{ the_date() }}</span>
               <div class="post-body-summary">{{ the_content() }}</div>
             </div>
           </article>
